@@ -9,18 +9,13 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>gs-demo</artifactId>
+    <artifactId>gs-web</artifactId>
     <dependencies>
         <dependency>
-            <groupId>com.gs</groupId>
-            <artifactId>gs-common</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>com.gs</groupId>
-            <artifactId>gs-web</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
     </dependencies>
+
 
 </project>

@@ -6,6 +6,8 @@
     <modules>
         <module>gs-common</module>
         <module>gs-demo</module>
+        <module>gs-web</module>
+        <module>gs-dao</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -21,7 +23,35 @@
 
     <properties>
         <java.version>1.8</java.version>
+        <gs.version>0.0.1-SNAPSHOT</gs.version>
     </properties>
+
+
+    <!-- 依赖管理：这里统一管理依赖的版本号 -->
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.gs</groupId>
+                <artifactId>gs-demo</artifactId>
+                <version>${gs.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.gs</groupId>
+                <artifactId>gs-common</artifactId>
+                <version>${gs.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.gs</groupId>
+                <artifactId>gs-web</artifactId>
+                <version>${gs.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.gs</groupId>
+                <artifactId>gs-dao</artifactId>
+                <version>${gs.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
     <dependencies>
         <dependency>
@@ -42,13 +72,13 @@
         </dependency>
     </dependencies>
 
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
+<!--    <build>-->
+<!--        <plugins>-->
+<!--            <plugin>-->
+<!--                <groupId>org.springframework.boot</groupId>-->
+<!--                <artifactId>spring-boot-maven-plugin</artifactId>-->
+<!--            </plugin>-->
+<!--        </plugins>-->
+<!--    </build>-->
 
 </project>

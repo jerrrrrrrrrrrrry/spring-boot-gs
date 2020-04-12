@@ -9,18 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>gs-demo</artifactId>
-    <dependencies>
-        <dependency>
-            <groupId>com.gs</groupId>
-            <artifactId>gs-common</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>com.gs</groupId>
-            <artifactId>gs-web</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
-    </dependencies>
+    <artifactId>gs-dao</artifactId>
+
 
 </project>
