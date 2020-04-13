@@ -18,9 +18,8 @@
         </dependency>
         <dependency>
             <groupId>com.gs</groupId>
-            <artifactId>gs-web</artifactId>
+            <artifactId>gs-frame</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
     </dependencies>
-
 </project>

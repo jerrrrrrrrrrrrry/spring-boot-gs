@@ -7,12 +7,12 @@ import org.springframework.web.bind.annotation.RestController;
 //apiDemo Restful风格
 
 @RestController
-@RequestMapping("demo")//根路径
-public class HelloWorld {
+@RequestMapping("demo2")//根路径
+public class HelloWorld2 {
 
-    @GetMapping("test")//子路径
+    @GetMapping("test2")//子路径
     public String test() {
-        return "Hello World!";
+        return "Hello World2!";
     }
 
 }
