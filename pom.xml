@@ -8,6 +8,7 @@
         <module>gs-demo</module>
         <module>gs-web</module>
         <module>gs-dao</module>
+        <module>gs-frame</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -16,7 +17,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.gs</groupId>
-    <artifactId>demo</artifactId>
+    <artifactId>gs</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>gs</name>
     <description>Demo project for Spring Boot</description>
@@ -24,6 +25,7 @@
     <properties>
         <java.version>1.8</java.version>
         <gs.version>0.0.1-SNAPSHOT</gs.version>
+        <skipTests>true</skipTests>
     </properties>
 
 
@@ -54,22 +56,7 @@
     </dependencyManagement>
 
     <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter</artifactId>
-        </dependency>
 
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.junit.vintage</groupId>
-                    <artifactId>junit-vintage-engine</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
     </dependencies>
 
 <!--    <build>-->
@@ -80,5 +67,28 @@
 <!--            </plugin>-->
 <!--        </plugins>-->
 <!--    </build>-->
+
+    <build>
+    <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.1</version>
+            <configuration>
+                <source>${java.version}</source>
+                <target>${java.version}</target>
+            </configuration>
+        </plugin>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-surefire-plugin</artifactId>
+            <version>2.19.1</version>
+            <configuration>
+                <skipTests>true</skipTests>    <!--默认关掉单元测试 -->
+            </configuration>
+        </plugin>
+    </plugins>
+    </build>
+
 
 </project>
