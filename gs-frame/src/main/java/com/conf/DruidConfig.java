@@ -1,4 +1,4 @@
-package conf;
+package com.conf;
 
 import com.alibaba.druid.pool.DruidDataSource;
 
@@ -11,7 +11,6 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Primary;
 import com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceBuilder;
 import com.gs.common.utils.spring.SpringUtils;
 
@@ -19,7 +18,6 @@ import com.gs.common.utils.spring.SpringUtils;
 import javax.servlet.*;
 import javax.sql.DataSource;
 import java.io.IOException;
-import java.util.HashMap;
 import java.util.Map;
 
 /**

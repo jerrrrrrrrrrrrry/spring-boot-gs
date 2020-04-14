@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 
 @SpringBootApplication(scanBasePackages = "com.gs",exclude = { DataSourceAutoConfiguration.class })
-@MapperScan("com.gs.mapper")
+@MapperScan("com.gs.**.mapper")
 public class GsApplication {
 
     //启动入口 唯一

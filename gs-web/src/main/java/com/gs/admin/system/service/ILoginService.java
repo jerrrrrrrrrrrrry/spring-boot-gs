@@ -1,5 +1,7 @@
 package com.gs.admin.system.service;
 
+import org.springframework.stereotype.Service;
+
 /**
  * @program: gs
  * @description: 登陆接口

@@ -1,4 +1,4 @@
-package conf;
+package com.conf;
 
 import org.apache.ibatis.io.VFS;
 import org.apache.ibatis.session.SqlSessionFactory;
